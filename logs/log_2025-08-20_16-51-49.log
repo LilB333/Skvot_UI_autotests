@@ -1,0 +1,88 @@
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-08-20 16:51:53.804734
+Start name method: click modal window close button
+
+End time: 2025-08-20 16:51:53.881503
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-08-20 16:51:53.881888
+Start name method: login
+
+End time: 2025-08-20 16:52:00.149861
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_email (call)
+Start time: 2025-08-20 16:52:05.000936
+Start name method: click modal window close button
+
+End time: 2025-08-20 16:52:05.221140
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_email (call)
+Start time: 2025-08-20 16:52:05.221648
+Start name method: login
+
+End time: 2025-08-20 16:52:10.594604
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_password (call)
+Start time: 2025-08-20 16:52:15.383355
+Start name method: click modal window close button
+
+End time: 2025-08-20 16:52:15.473767
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_password (call)
+Start time: 2025-08-20 16:52:15.474212
+Start name method: login
+
+End time: 2025-08-20 16:52:20.806535
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_empty_login (call)
+Start time: 2025-08-20 16:52:26.279371
+Start name method: click modal window close button
+
+End time: 2025-08-20 16:52:26.402638
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_empty_login (call)
+Start time: 2025-08-20 16:52:26.403166
+Start name method: login
+
+End time: 2025-08-20 16:52:31.800318
+End name method: login
+URL: https://www.skvot.com/
+
+-----

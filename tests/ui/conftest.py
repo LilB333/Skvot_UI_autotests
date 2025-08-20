@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture
 def set_up():
@@ -16,8 +17,7 @@ def set_up():
         chrome_options.add_experimental_option('detach', True)
 
         # Путь к драйверу
-        service = Service(
-            executable_path='C:\\Users\\user\\Downloads\\data for work\\pycharm_projects\\ProjectsPy\\resource\\chromedriver.exe')
+        service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
 
         # Открытие сайта
