@@ -1,0 +1,10 @@
+
+Start test
+Close modal window
+Search button was clicked
+Значение текста элемента: 
+ПОИСК ПО КАТАЛОГУ: «ДУРШЛАГ»
+====Текст элемента верный====
+====Текст есть на странице====
+
+Finish test

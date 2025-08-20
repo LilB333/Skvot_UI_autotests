@@ -1,0 +1,10 @@
+
+Start test
+Click yes in modal window
+Click login button
+Added email
+Added password
+Submitted button was clicked
+Текст есть на странице
+
+Finish test

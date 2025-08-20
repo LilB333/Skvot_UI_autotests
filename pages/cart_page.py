@@ -1,27 +1,30 @@
 import time
-from argparse import Action
 
+import allure
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from base.base_class import Base
+from utils.logger import Logger
 
 class CartPage:
     def __init__(self, driver):
+        self.base = Base(driver)
         self.driver = driver
         self.action = ActionChains(self.driver)
 
     #Mock-data
     email = 'cope80449@cancer-treatment.xyz'
     password = 'test_create_user1'
-    city = 'спб'
-    address_zip = '453129'
-    address_street = 'Petrogradskaya'
-    address_street_number = '17'
-    address_building = '2'
-    address_apartment = '24'
 
     #Locators
+    modal_window_close_button = '//span[@class="close-modal-btn"]'
+
+    cart_item = '//div[@class="cart-item"]'
+
+    cart_total_sum = '//div[contains(text(), "Итого:")]'
+
     email_input = '(//input[@type="email"])[1]'
     password_input = '(//input[@type="password"])[1]'
     submit_button = '(//button[@type="submit"])[1]'
@@ -39,6 +42,18 @@ class CartPage:
     cart_clean_button = '//a[@class="cart-popup__clean"]'
 
     #Getters
+    def get_modal_window_close_button(self):
+        return WebDriverWait(self.driver, 30).until(
+            EC.element_to_be_clickable((By.XPATH, self.modal_window_close_button)))
+
+    def get_cart_item(self, n):
+        return WebDriverWait(self.driver, 30).until(
+            EC.element_to_be_clickable((By.XPATH, f'({self.cart_item})[{n}]')))
+
+    def get_cart_total_sum(self):
+        return WebDriverWait(self.driver, 30).until(
+            EC.element_to_be_clickable((By.XPATH, self.cart_total_sum)))
+
     def get_email_input(self):
         return WebDriverWait(self.driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, self.email_input)))
@@ -86,6 +101,10 @@ class CartPage:
             EC.element_to_be_clickable((By.XPATH, self.cart_clean_button)))
 
     #Actions
+    def click_modal_window_close_button(self):
+        self.get_modal_window_close_button().click()
+        print("Close modal window")
+
     def add_email (self, email):
         self.get_email_input().send_keys(email)
         print("Added email")
@@ -134,36 +153,77 @@ class CartPage:
         print("Cart clean button was clicked")
 
     #Methods
-    def buy_product(self):
-        print("==Оформляем добавленный товар==")
-        set_time = 1
-        self.add_email(email=self.email)
-        time.sleep(set_time)
-        self.add_password(password=self.password)
-        time.sleep(set_time)
-        self.click_submit_button()
-        time.sleep(set_time)
-        self.click_place_order_button()
-        time.sleep(set_time)
-        self.add_city(city=self.city)
-        time.sleep(set_time)
-        self.click_first_city_in_dropdown_list()
-        time.sleep(set_time)
-        self.click_delivery_service_button()
-        time.sleep(set_time)
-        self.click_continue_payment_button()
-        time.sleep(set_time)
-        self.add_address_zip(address_zip=self.address_zip)
-        time.sleep(set_time)
-        self.add_address_street(address_street=self.address_street)
-        time.sleep(set_time)
-        self.add_address_street_number(address_street_number=self.address_street_number)
-        time.sleep(set_time)
-        self.add_address_building(address_building=self.address_building)
-        time.sleep(set_time)
-        self.add_address_apartment(address_apartment=self.address_apartment)
-        time.sleep(set_time)
-        self.move_to_cart_button()
-        time.sleep(set_time)
-        self.click_cart_clean_button()
-        time.sleep(3)
+    def close_modal_window(self):
+        with allure.step("Click modal window close button"):
+            Logger.add_start_step(method="click modal window close button")
+            self.click_modal_window_close_button()
+            Logger.add_end_step(url=self.driver.current_url, method="click modal window close button")
+
+    def check_product_info(self, text, n):
+        with allure.step("Check product info"):
+            Logger.add_start_step(method='check_product_info')
+            print("==Проверяем добавленный товар==")
+            self.base.check_element_text_value(text, self.get_cart_item(n))
+            Logger.add_end_step(url=self.driver.current_url, method="check_product_info")
+
+    def check_total_cart_sum(self, total_sum):
+        with allure.step("Check total cart sum"):
+            Logger.add_start_step(method="check_total_cart_sum")
+            print("==Проверяем итоговую сумму==")
+            self.base.check_element_text_value(total_sum, self.get_cart_total_sum())
+            Logger.add_end_step(url=self.driver.current_url, method="check_total_cart_sum")
+
+    def clean_cart(self):
+        with allure.step("Clean cart"):
+            Logger.add_start_step(method="clean_cart")
+            print("==Очищаем корзину==")
+            self.move_to_cart_button()
+            self.click_cart_clean_button()
+            time.sleep(1)
+            Logger.add_end_step(url=self.driver.current_url, method="clean_cart")
+
+    def login(self, email, password):
+        with allure.step("Login"):
+            Logger.add_start_step(method='login')
+            print("==Заходим в аккаунт==")
+            self.add_email(email)
+            time.sleep(1)
+            self.add_password(password)
+            time.sleep(1)
+            self.click_submit_button()
+            Logger.add_end_step(url=self.driver.current_url, method='login')
+
+    def fill_shipping_info(self, city, address_zip, address_street, address_street_number, address_building, address_apartment):
+        with allure.step("Fill shipping info"):
+            Logger.add_start_step(method='fill_shipping_info')
+            print("==Оформляем добавленный товар==")
+            set_time = 1
+
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView({block: 'center'});"
+                "window.scrollBy(0, 300);",  # Опускаем на 300px вниз
+                self.get_cart_button()
+            )
+            time.sleep(1)
+            self.click_place_order_button()
+            time.sleep(set_time)
+            self.add_city(city)
+            time.sleep(set_time)
+            self.click_first_city_in_dropdown_list()
+            time.sleep(set_time)
+            self.click_delivery_service_button()
+            time.sleep(set_time)
+            self.click_continue_payment_button()
+            time.sleep(set_time)
+            self.add_address_zip(address_zip)
+            time.sleep(set_time)
+            self.add_address_street(address_street)
+            time.sleep(set_time)
+            self.add_address_street_number(address_street_number)
+            time.sleep(set_time)
+            self.add_address_building(address_building)
+            time.sleep(set_time)
+            self.add_address_apartment(address_apartment)
+            self.base.get_screenshot()
+            Logger.add_end_step(url=self.driver.current_url, method='fill_shipping_info')
+
