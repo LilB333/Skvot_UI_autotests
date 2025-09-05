@@ -1,0 +1,25 @@
+
+Start test
+Close modal window
+Deck size button is clicked
+In cart button is clicked
+==Заходим в аккаунт==
+Added email
+Added password
+Submitted button was clicked
+==Оформляем добавленный товар==
+Place order button was clicked
+Added city
+Selected first city in dropdown list
+Selected delivery service
+Continue payment button was clicked
+Added address zip
+Added address street
+Added address street number
+Added address building
+Added address apartment
+==Очищаем корзину==
+Move to cart button
+Cart clean button was clicked
+
+Finish test

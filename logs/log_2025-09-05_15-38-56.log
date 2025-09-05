@@ -1,0 +1,22 @@
+
+-----
+Test: tests/ui/test_search_product.py::TestSearchProduct::test_search_valid_product (call)
+Start time: 2025-09-05 15:39:03.065424
+Start name method: search item
+
+End time: 2025-09-05 15:39:08.050799
+End name method: search item
+URL: https://www.skvot.com/search?text=%D0%B1%D1%83%D1%88%D0%B8%D0%BD%D0%B3
+
+-----
+
+-----
+Test: tests/ui/test_search_product.py::TestSearchProduct::test_search_invalid_product (call)
+Start time: 2025-09-05 15:39:13.668667
+Start name method: search item
+
+End time: 2025-09-05 15:39:18.167586
+End name method: search item
+URL: https://www.skvot.com/search?text=%D0%B4%D1%83%D1%80%D1%88%D0%BB%D0%B0%D0%B3
+
+-----

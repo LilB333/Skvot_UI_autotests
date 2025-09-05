@@ -6,24 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a66bde6-a353-42a4-85dd-a90bbce8e276" name="Changes" comment="initial commit">
       <changelist_data name="LilB333" email="renal_turaev@mail.ru" automatic="false" />
-      <change afterPath="$PROJECT_DIR$/logs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_add_product_to_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_cart_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_fill_shipping_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_product_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_search_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium_Skvot_UI_Autotests.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium_Skvot_UI_Autotests.egg-info/SOURCES.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_buy_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

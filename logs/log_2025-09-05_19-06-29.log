@@ -1,0 +1,17 @@
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-09-05 19:06:39.215297
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:06:39.308672
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-09-05 19:06:39.309235
+Start name method: login
+

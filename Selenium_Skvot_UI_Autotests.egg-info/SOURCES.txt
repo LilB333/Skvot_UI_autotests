@@ -1,4 +1,4 @@
-setup.py
+Уsetup.py
 Selenium_Skvot_UI_Autotests.egg-info/PKG-INFO
 Selenium_Skvot_UI_Autotests.egg-info/SOURCES.txt
 Selenium_Skvot_UI_Autotests.egg-info/dependency_links.txt

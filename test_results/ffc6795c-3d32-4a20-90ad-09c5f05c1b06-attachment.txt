@@ -1,0 +1,9 @@
+
+Start test
+Close modal window
+Click login button
+Added email
+Added password
+Submitted button was clicked
+
+Finish test
