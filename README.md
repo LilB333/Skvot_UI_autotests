@@ -23,9 +23,13 @@
 git clone https://github.com/LilB333/Skvot_UI_autotests.git
 cd Skvot_UI_autotests
 ```
+
 ### Создание виртуального окружения и активация
+
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 ### Установка зависимостей
 
