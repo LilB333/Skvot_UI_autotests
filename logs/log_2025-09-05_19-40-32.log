@@ -1,0 +1,550 @@
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-09-05 19:40:36.769759
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:40:36.880207
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-09-05 19:40:36.880631
+Start name method: login
+
+End time: 2025-09-05 19:40:42.459918
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_email (call)
+Start time: 2025-09-05 19:40:48.017491
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:40:48.113781
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_email (call)
+Start time: 2025-09-05 19:40:48.114120
+Start name method: login
+
+End time: 2025-09-05 19:40:53.537672
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_password (call)
+Start time: 2025-09-05 19:40:59.430880
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:40:59.532787
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_password (call)
+Start time: 2025-09-05 19:40:59.533187
+Start name method: login
+
+End time: 2025-09-05 19:41:04.872729
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_empty_login (call)
+Start time: 2025-09-05 19:41:10.689400
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:41:11.471209
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_empty_login (call)
+Start time: 2025-09-05 19:41:11.471636
+Start name method: login
+
+End time: 2025-09-05 19:41:16.794362
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_search_product.py::TestSearchProduct::test_search_valid_product (call)
+Start time: 2025-09-05 19:41:22.723655
+Start name method: search item
+
+End time: 2025-09-05 19:41:26.966594
+End name method: search item
+URL: https://www.skvot.com/search?text=%D0%B1%D1%83%D1%88%D0%B8%D0%BD%D0%B3
+
+-----
+
+-----
+Test: tests/ui/test_search_product.py::TestSearchProduct::test_search_invalid_product (call)
+Start time: 2025-09-05 19:41:32.610894
+Start name method: search item
+
+End time: 2025-09-05 19:41:36.984299
+End name method: search item
+URL: https://www.skvot.com/search?text=%D0%B4%D1%83%D1%80%D1%88%D0%BB%D0%B0%D0%B3
+
+-----
+
+-----
+Test: tests/ui/test_product_page.py::TestProductPage::test_product_page_1 (call)
+Start time: 2025-09-05 19:41:41.924720
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:41:42.584116
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_product_page.py::TestProductPage::test_product_page_1 (call)
+Start time: 2025-09-05 19:41:42.584465
+Start name method: check product page
+
+End time: 2025-09-05 19:41:44.847840
+End name method: check product page
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_product_page.py::TestProductPage::test_product_page_2 (call)
+Start time: 2025-09-05 19:41:49.448081
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:41:50.084619
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927
+
+-----
+
+-----
+Test: tests/ui/test_product_page.py::TestProductPage::test_product_page_2 (call)
+Start time: 2025-09-05 19:41:50.084991
+Start name method: check product page
+
+End time: 2025-09-05 19:41:52.485097
+End name method: check product page
+URL: https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart (call)
+Start time: 2025-09-05 19:41:57.920476
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:41:58.034477
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart (call)
+Start time: 2025-09-05 19:41:58.034915
+Start name method: add product to cart
+
+End time: 2025-09-05 19:41:59.299658
+End name method: add product to cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart (call)
+Start time: 2025-09-05 19:41:59.300110
+Start name method: check product info from cart
+
+End time: 2025-09-05 19:41:59.806390
+End name method: check product info from cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart (call)
+Start time: 2025-09-05 19:41:59.806641
+Start name method: clean cart
+
+End time: 2025-09-05 19:42:00.140039
+End name method: clean_cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart_by_filters (call)
+Start time: 2025-09-05 19:42:05.610494
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:42:05.731198
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart_by_filters (call)
+Start time: 2025-09-05 19:42:05.731600
+Start name method: add_product_1_to_cart
+
+End time: 2025-09-05 19:42:19.144887
+End name method: add_product_1_to_cart
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_product_to_cart_by_filters (call)
+Start time: 2025-09-05 19:42:19.145282
+Start name method: clean_cart
+
+End time: 2025-09-05 19:42:19.469547
+End name method: clean_cart
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_multiple_product_to_cart (call)
+Start time: 2025-09-05 19:42:24.825712
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:42:24.911950
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_multiple_product_to_cart (call)
+Start time: 2025-09-05 19:42:24.912230
+Start name method: add multiple product to cart
+
+End time: 2025-09-05 19:42:27.809819
+End name method: add multiple product to cart
+URL: https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_multiple_product_to_cart (call)
+Start time: 2025-09-05 19:42:27.810272
+Start name method: check product info from cart
+
+End time: 2025-09-05 19:42:28.315227
+End name method: check product info from cart
+URL: https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927
+
+-----
+
+-----
+Test: tests/ui/test_add_product_to_cart.py::TestAddProductToCart::test_add_multiple_product_to_cart (call)
+Start time: 2025-09-05 19:42:28.315482
+Start name method: clean cart
+
+End time: 2025-09-05 19:42:28.623259
+End name method: clean_cart
+URL: https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_product_cart_page (call)
+Start time: 2025-09-05 19:42:34.087846
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:42:34.172293
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_product_cart_page (call)
+Start time: 2025-09-05 19:42:34.172619
+Start name method: add product to cart
+
+End time: 2025-09-05 19:42:35.329471
+End name method: add product to cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_product_cart_page (call)
+Start time: 2025-09-05 19:42:35.651597
+Start name method: check_product_info
+
+End time: 2025-09-05 19:42:35.693544
+End name method: check_product_info
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_product_cart_page (call)
+Start time: 2025-09-05 19:42:35.693839
+Start name method: check_total_cart_sum
+
+End time: 2025-09-05 19:42:35.737383
+End name method: check_total_cart_sum
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_product_cart_page (call)
+Start time: 2025-09-05 19:42:35.737681
+Start name method: clean_cart
+
+End time: 2025-09-05 19:42:37.067255
+End name method: clean_cart
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_multiple_product_cart_page (call)
+Start time: 2025-09-05 19:42:42.577789
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:42:42.790879
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_multiple_product_cart_page (call)
+Start time: 2025-09-05 19:42:42.791293
+Start name method: add multiple product to cart
+
+End time: 2025-09-05 19:42:47.353532
+End name method: add multiple product to cart
+URL: https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_multiple_product_cart_page (call)
+Start time: 2025-09-05 19:42:47.651678
+Start name method: check_product_info
+
+End time: 2025-09-05 19:42:47.700280
+End name method: check_product_info
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_multiple_product_cart_page (call)
+Start time: 2025-09-05 19:42:47.700589
+Start name method: check_product_info
+
+End time: 2025-09-05 19:42:47.726766
+End name method: check_product_info
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_multiple_product_cart_page (call)
+Start time: 2025-09-05 19:42:47.727048
+Start name method: check_total_cart_sum
+
+End time: 2025-09-05 19:42:47.748810
+End name method: check_total_cart_sum
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_cart_page.py::TestCartPage::test_multiple_product_cart_page (call)
+Start time: 2025-09-05 19:42:47.749123
+Start name method: clean_cart
+
+End time: 2025-09-05 19:42:49.085210
+End name method: clean_cart
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_fill_shipping_info.py::TestFillShippingInfo::test_fill_shipping_info (call)
+Start time: 2025-09-05 19:42:54.537558
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:42:54.619372
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_fill_shipping_info.py::TestFillShippingInfo::test_fill_shipping_info (call)
+Start time: 2025-09-05 19:42:54.619764
+Start name method: add product to cart
+
+End time: 2025-09-05 19:42:55.801443
+End name method: add product to cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_fill_shipping_info.py::TestFillShippingInfo::test_fill_shipping_info (call)
+Start time: 2025-09-05 19:42:56.146753
+Start name method: login
+
+End time: 2025-09-05 19:42:58.809429
+End name method: login
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_fill_shipping_info.py::TestFillShippingInfo::test_fill_shipping_info (call)
+Start time: 2025-09-05 19:42:58.809748
+Start name method: fill_shipping_info
+
+End time: 2025-09-05 19:43:05.783803
+End name method: fill_shipping_info
+URL: https://www.skvot.com/cart/ordering
+
+-----
+
+-----
+Test: tests/ui/test_fill_shipping_info.py::TestFillShippingInfo::test_fill_shipping_info (call)
+Start time: 2025-09-05 19:43:05.784188
+Start name method: clean_cart
+
+End time: 2025-09-05 19:43:07.123539
+End name method: clean_cart
+URL: https://www.skvot.com/cart/ordering
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:12.477919
+Start name method: click modal window close button
+
+End time: 2025-09-05 19:43:12.710168
+End name method: click modal window close button
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:12.710544
+Start name method: check product page
+
+End time: 2025-09-05 19:43:15.034381
+End name method: check product page
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:15.034640
+Start name method: add product to cart
+
+End time: 2025-09-05 19:43:16.142247
+End name method: add product to cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:16.142714
+Start name method: check product info from cart
+
+End time: 2025-09-05 19:43:16.640820
+End name method: check product info from cart
+URL: https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:18.279347
+Start name method: check_product_info
+
+End time: 2025-09-05 19:43:18.320696
+End name method: check_product_info
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:18.320993
+Start name method: check_total_cart_sum
+
+End time: 2025-09-05 19:43:18.353481
+End name method: check_total_cart_sum
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:18.353822
+Start name method: login
+
+End time: 2025-09-05 19:43:21.030798
+End name method: login
+URL: https://www.skvot.com/cart
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:21.031125
+Start name method: fill_shipping_info
+
+End time: 2025-09-05 19:43:27.987107
+End name method: fill_shipping_info
+URL: https://www.skvot.com/cart/ordering
+
+-----
+
+-----
+Test: tests/ui/test_buy_product.py::TestBuyProduct::test_buy_product (call)
+Start time: 2025-09-05 19:43:27.987560
+Start name method: clean_cart
+
+End time: 2025-09-05 19:43:29.320481
+End name method: clean_cart
+URL: https://www.skvot.com/cart/ordering
+
+-----
