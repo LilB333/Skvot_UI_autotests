@@ -23,6 +23,9 @@
 git clone https://github.com/LilB333/Skvot_UI_autotests.git
 cd Skvot_UI_autotests
 ```
+### Создание виртуального окружения и активация
+python -m venv venv
+venv\Scripts\activate
 
 ### Установка зависимостей
 
@@ -78,7 +81,7 @@ Skvot_UI_autotests/
 │   └── logger.py     # Класс для создания файлов логов
 ├── base/                   # Базовые действия на странице
 │   └── base_class.py     # Класс для базовых действий на странице - получение url, сверка значений, скриншоты
-├── test_results/          # Фйлы отчетов Allure (генерируются по инструкции)
+├── test_results/          # Файлы отчетов Allure (генерируются по инструкции)
 ├── requirements.txt         # Зависимости Python
 └── screen/              # Скриншоты тестов
 └── logs/              # Логи тестов
