@@ -53,7 +53,7 @@ class MainPage:
 
     #Getters
     def get_modal_window_close_button(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.modal_window_close_button)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.modal_window_close_button)))
     def get_login_button(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.login_button)))
     def get_email_input(self):
@@ -95,7 +95,7 @@ class MainPage:
         return WebDriverWait(self.driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, self.filter_highest_price)))
     def get_filter_submit(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.filter_submit)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.filter_submit)))
 
     def get_shirt_c1rca(self):
         return WebDriverWait(self.driver, 30).until(
