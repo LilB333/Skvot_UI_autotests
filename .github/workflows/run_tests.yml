@@ -43,4 +43,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: run tests
-        run: pytest
+        run: |
+          pytest -n 2 --tb=short -x tests/ # Уменьшаем параллелизм
+          pkill -f chrome || true # Принудительно очищаем
+          pkill -f chromedriver || true
