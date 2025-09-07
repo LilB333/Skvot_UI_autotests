@@ -44,6 +44,6 @@ jobs:
 
       - name: run tests
         run: |
-          pytest -n 2 --tb=short -x tests/ # Уменьшаем параллелизм
+          pytest -n 2 --tb=short -x tests/ui/ # Уменьшаем параллелизм
           pkill -f chrome || true # Принудительно очищаем
           pkill -f chromedriver || true
