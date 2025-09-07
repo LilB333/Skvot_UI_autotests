@@ -44,6 +44,4 @@ jobs:
 
       - name: run tests
         run: |
-          pytest --tb=short -x tests/ui/ 
-          pkill -f chrome || true # Принудительно очищаем
-          pkill -f chromedriver || true
+          pytest
