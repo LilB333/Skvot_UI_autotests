@@ -42,22 +42,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Start Xvfb
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          run: pytest
-
-      - name: Debug Xvfb
-        run: |
-          # Проверяем что Xvfb работает
-          ps aux | grep Xvfb
-
-          # Проверяем что дисплей доступен
-          xdpyinfo -display :99
-
-          # Делаем скриншот виртуального дисплея
-          import -window root xvfb_screenshot.png
-
       - name: run tests
         run: |
           pytest
