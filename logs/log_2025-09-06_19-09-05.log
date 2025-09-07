@@ -1,0 +1,66 @@
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-09-06 19:09:11.902540
+Start name method: click modal window close button
+
+End time: 2025-09-06 19:09:12.576761
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_valid (call)
+Start time: 2025-09-06 19:09:12.577099
+Start name method: login
+
+End time: 2025-09-06 19:09:17.843893
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_email (call)
+Start time: 2025-09-06 19:09:24.117927
+Start name method: click modal window close button
+
+End time: 2025-09-06 19:09:24.189062
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_email (call)
+Start time: 2025-09-06 19:09:24.189387
+Start name method: login
+
+End time: 2025-09-06 19:09:29.490363
+End name method: login
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_password (call)
+Start time: 2025-09-06 19:09:35.962338
+Start name method: click modal window close button
+
+End time: 2025-09-06 19:09:36.045144
+End name method: click modal window close button
+URL: https://www.skvot.com/
+
+-----
+
+-----
+Test: tests/ui/test_login.py::TestLogin::test_login_invalid_password (call)
+Start time: 2025-09-06 19:09:36.045443
+Start name method: login
+
+End time: 2025-09-06 19:09:41.326007
+End name method: login
+URL: https://www.skvot.com/
+
+-----

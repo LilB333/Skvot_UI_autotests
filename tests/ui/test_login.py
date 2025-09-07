@@ -55,8 +55,8 @@ class TestLogin:
         main.login(email = '', password = '')
 
         base = Base(driver)
-        base.check_value_css_property(main.get_email_input(), 'border', '0.8px solid rgb(255, 0, 0)')
-        base.check_value_css_property(main.get_password_input(), 'border', '0.8px solid rgb(255, 0, 0)')
+        base.check_value_css_property(main.get_email_input(), 'border', '1px solid rgb(255, 0, 0)')
+        base.check_value_css_property(main.get_password_input(), 'border', '1px solid rgb(255, 0, 0)')
 
         driver.quit()
 
