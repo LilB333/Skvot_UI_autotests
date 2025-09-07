@@ -21,6 +21,7 @@ class TestAddProductToCart:
         cart_total_sum = '5 900 ₽'
 
         product_page = ProductPage(driver)
+
         product_page.close_modal_window()
         product_page.add_product_to_cart()
         product_page.check_product_info_from_cart(cart_title, cart_item, cart_total_sum)

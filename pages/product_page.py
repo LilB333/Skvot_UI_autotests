@@ -42,7 +42,7 @@ class ProductPage:
 
     #Getters
     def get_modal_window_close_button(self):
-        return WebDriverWait(self.driver, 120).until(
+        return WebDriverWait(self.driver, 240).until(
             EC.element_to_be_clickable((By.XPATH, self.modal_window_close_button)))
 
     def get_product_head_title(self):
