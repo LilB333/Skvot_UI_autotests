@@ -1,5 +1,4 @@
 import time
-from time import sleep
 
 import allure
 from selenium.webdriver.common.by import By

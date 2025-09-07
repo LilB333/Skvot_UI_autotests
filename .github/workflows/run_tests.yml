@@ -42,14 +42,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install virtual display
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y xvfb
+      - name: Start Xvfb
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: pytest
 
-          # Запускаем виртуальный дисплей
-          Xvfb :99 -screen 0 1920x1080x24 &
-          export DISPLAY=:99
+      - name: Debug Xvfb
+        run: |
+          # Проверяем что Xvfb работает
+          ps aux | grep Xvfb
+
+          # Проверяем что дисплей доступен
+          xdpyinfo -display :99
+
+          # Делаем скриншот виртуального дисплея
+          import -window root xvfb_screenshot.png
 
       - name: run tests
         run: |
