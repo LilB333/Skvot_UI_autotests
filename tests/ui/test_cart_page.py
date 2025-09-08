@@ -36,7 +36,7 @@ class TestCartPage:
 
         driver = set_up(url=url_product_1)
         product_page = ProductPage(driver)
-        product_page.close_modal_window()
+
         product_page.add_product_to_cart()
 
         driver.get(url_cart)
@@ -91,7 +91,7 @@ class TestCartPage:
 
         driver = set_up(url=url_product_1)
         product_page = ProductPage(driver)
-        product_page.close_modal_window()
+
         product_page.add_multiple_product_to_cart(url=url_product_2)
 
         driver.get(url_cart)

@@ -1,6 +1,7 @@
 import allure
 import pytest
 from pages.product_page import ProductPage
+from base.base_class import Base
 
 url_product_1 = 'https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952'
 url_product_2 = 'https://www.skvot.com/catalog/clothing/shirts-c1rca-victory-tee-green-bottle-CB-00013927'
@@ -27,7 +28,9 @@ IMPACT LIGHT — деки с продольной вставкой карбон�
 
         driver = set_up(url=url_product_1)
         product_page = ProductPage(driver)
-        product_page.close_modal_window()
+        base = Base(driver)
+        # Закрываем модальное окно
+        base.close_modal_window()
         # Проверка описания товара
         product_page.check_product_page(product_head_title, product_price, product_size, product_description)
 
@@ -46,7 +49,9 @@ IMPACT LIGHT — деки с продольной вставкой карбон�
 
         driver = set_up(url=url_product_2)
         product_page = ProductPage(driver)
-        product_page.close_modal_window()
+        base = Base(driver)
+        # Закрываем модальное окно
+        base.close_modal_window()
         # Проверка описания товара
         product_page.check_product_page(product_head_title, product_price, product_size, product_description)
 

@@ -1,5 +1,3 @@
-import time
-
 import allure
 import pytest
 from pages.product_page import ProductPage
@@ -24,17 +22,6 @@ class TestFillShippingInfo:
         driver = set_up(url=url_product_1)
         product_page = ProductPage(driver)
 
-        driver.execute_script("""
-            // Создаем и запускаем событие клика
-            var event = new MouseEvent('click', {
-                view: window,
-                bubbles: true,
-                cancelable: true
-            });
-            document.body.dispatchEvent(event);
-        """)
-
-        #product_page.close_modal_window()
         product_page.add_product_to_cart()
 
         cart_page = CartPage(driver)

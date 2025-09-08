@@ -22,16 +22,6 @@ class TestAddProductToCart:
 
         product_page = ProductPage(driver)
 
-        driver.execute_script("""
-            // Создаем и запускаем событие клика
-            var event = new MouseEvent('click', {
-                view: window,
-                bubbles: true,
-                cancelable: true
-            });
-            document.body.dispatchEvent(event);
-        """)
-        #product_page.close_modal_window()
         product_page.add_product_to_cart()
         product_page.check_product_info_from_cart(cart_title, cart_item, cart_total_sum)
 
@@ -46,16 +36,6 @@ class TestAddProductToCart:
 
         main_page = MainPage(driver)
 
-        driver.execute_script("""
-            // Создаем и запускаем событие клика
-            var event = new MouseEvent('click', {
-                view: window,
-                bubbles: true,
-                cancelable: true
-            });
-            document.body.dispatchEvent(event);
-        """)
-        #main_page.close_modal_window()
         main_page.add_product_1_to_cart()
 
         # Очищаем корзину для следующего теста
@@ -82,16 +62,6 @@ class TestAddProductToCart:
 
         product_page = ProductPage(driver)
 
-        driver.execute_script("""
-            // Создаем и запускаем событие клика
-            var event = new MouseEvent('click', {
-                view: window,
-                bubbles: true,
-                cancelable: true
-            });
-            document.body.dispatchEvent(event);
-        """)
-        #product_page.close_modal_window()
         product_page.add_multiple_product_to_cart(url=url_product_2)
         product_page.check_product_info_from_cart(cart_title, cart_item, cart_total_sum)
 

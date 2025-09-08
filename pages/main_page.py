@@ -1,6 +1,4 @@
 import time
-from time import sleep
-
 import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -17,8 +15,6 @@ class MainPage:
         self.base = Base(driver)
 
     #Locators
-    modal_window_close_button = '//span[@class="close-modal-btn"]'
-
     login_button = '//a[@data-modal="login"]'
     email_input = '//input[@type="email"]'
     password_input = '//input[@type="password"]'
@@ -52,82 +48,76 @@ class MainPage:
     cart_clean_button = '//a[@class="cart-popup__clean"]'
 
     #Getters
-    def get_modal_window_close_button(self):
-        return WebDriverWait(self.driver, 240).until(EC.element_to_be_clickable((By.XPATH, self.modal_window_close_button)))
     def get_login_button(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.login_button)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.login_button)))
     def get_email_input(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.email_input)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.email_input)))
     def get_password_input(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.password_input)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.password_input)))
     def get_submit_button(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.submit_button)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.submit_button)))
 
     def get_search_button(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.search_button)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.search_button)))
     def get_search_field(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.search_field)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.search_field)))
     def get_search_head_title(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.search_head_title)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.search_head_title)))
 
     def get_catalog_button(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.catalog_button)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.catalog_button)))
     def get_category_skateboarding(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.category_skateboarding)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.category_skateboarding)))
     def get_category_clothing(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.category_clothing)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.category_clothing)))
 
     def get_subcategory_shirts(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.subcategory_shirts)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.subcategory_shirts)))
     def get_subcategory_skate_deck(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.subcategory_skate_deck)))
+        return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.subcategory_skate_deck)))
 
     def get_filter_checkbox_brand_C1RCA(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.filter_checkbox_brand_C1RCA)))
     def get_filter_checkbox_brand_Skvot(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.filter_checkbox_brand_Skvot)))
     def get_filer_checkbox_sex_male(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.filter_checkbox_sex_male)))
     def get_filter_highest_price(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.filter_highest_price)))
     def get_filter_submit(self):
         return WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.XPATH, self.filter_submit)))
 
     def get_shirt_c1rca(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.shirt_c1rca)))
     def get_deck_skvot(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.deck_skvot)))
 
     def get_size_button_deck(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.size_button_deck)))
     def get_size_button_shirt(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.size_button_shirt)))
     def get_in_cart_button(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.in_cart_button)))
     def get_cart_button(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.cart_button)))
     def get_place_order(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.place_order)))
     def get_cart_clean_button(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 60).until(
             EC.element_to_be_clickable((By.XPATH, self.cart_clean_button)))
 
     #Actions
-    def click_modal_window_close_button(self):
-        self.get_modal_window_close_button().click()
-        print("Close modal window")
-
     def click_login_button(self):
         self.get_login_button().click()
         print("Click login button")
@@ -212,15 +202,10 @@ class MainPage:
         print("Cart clean button was clicked")
 
     #Methods
-    def close_modal_window(self):
-        with allure.step("Click modal window close button"):
-            Logger.add_start_step(method="click modal window close button")
-            self.click_modal_window_close_button()
-            Logger.add_end_step(url=self.driver.current_url, method="click modal window close button")
-
     def login(self, email, password):
         with allure.step("Login"):
             Logger.add_start_step(method="login")
+            self.base.close_modal_window()
             self.click_login_button()
             time.sleep(1)
             self.add_email(email)
@@ -235,7 +220,7 @@ class MainPage:
     def search_item(self, item_name):
         with allure.step("Search item"):
             Logger.add_start_step(method="search item")
-            self.click_modal_window_close_button()
+            self.base.close_modal_window()
             time.sleep(1)
             self.click_search_button()
             time.sleep(1)
@@ -249,7 +234,8 @@ class MainPage:
         with allure.step("Add product 1 to cart"):
             Logger.add_start_step(method='add_product_1_to_cart')
             print("==Добавляем товар в корзину==")
-            set_time = 1 # задаем время сна для подстановки
+            set_time = 0 # задаем время сна для подстановки
+            self.base.close_modal_window()
             self.click_catalog_button()
             time.sleep(set_time)
             self.move_to_category_skateboarding()
@@ -290,7 +276,7 @@ class MainPage:
             Logger.add_start_step(method='add_product_2_to_cart')
             print("==Добавляем товар в корзину==")
             set_time = 1  # задаем время сна для подстановки
-            self.click_modal_window_close_button()
+            self.base.close_modal_window()
             time.sleep(set_time)
             self.click_catalog_button()
             time.sleep(set_time)

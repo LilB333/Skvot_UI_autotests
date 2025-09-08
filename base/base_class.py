@@ -1,6 +1,6 @@
 import datetime
 
-class Base():
+class Base:
     def __init__(self, driver):
         self.driver = driver
 
@@ -9,7 +9,18 @@ class Base():
         get_url = self.driver.current_url
         print("====Текущий url====", get_url)
 
-    "Метод для клика вне попапа"
+    "Метод для закрытия модального окна"
+    def close_modal_window(self):
+        self.driver.execute_script("""
+            // Создаем и запускаем событие клика
+            var event = new MouseEvent('click', {
+                view: window,
+                bubbles: true,
+                cancelable: true
+            });
+            document.body.dispatchEvent(event);
+        """)
+        print("====Модальное окно закрыто====")
 
     "Метод для сверки url"
     def approve_valid_url(self, url):

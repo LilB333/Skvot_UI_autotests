@@ -2,6 +2,7 @@ import allure
 import pytest
 from pages.product_page import ProductPage
 from pages.cart_page import CartPage
+from base.base_class import Base
 
 url_product = 'https://www.skvot.com/catalog/skateboarding/skate-deck-skvot-knight-CB-00020952'
 url_cart = 'https://www.skvot.com/cart'
@@ -75,7 +76,9 @@ IMPACT LIGHT — деки с продольной вставкой карбон�
         address_apartment = '24'
 
         product_page = ProductPage(driver)
-        product_page.close_modal_window()
+        base = Base(driver)
+        # Закрываем модальное окно
+        base.close_modal_window()
         # Проверяем описание товара
         product_page.check_product_page(product_head_title, product_price, product_size, product_description)
         # Добавляем товары в корзину

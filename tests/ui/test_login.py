@@ -15,7 +15,7 @@ class TestLogin:
         driver = set_up(url=url)
 
         main = MainPage(driver)
-        main.close_modal_window()
+
         main.login(email = 'cope80449@cancer-treatment.xyz', password = 'test_create_user1')
 
         driver.quit()
@@ -25,7 +25,7 @@ class TestLogin:
         driver = set_up(url=url)
 
         main = MainPage(driver)
-        main.close_modal_window()
+
         main.login(email = 'cope80449@', password = 'test_create_user1')
 
         base = Base(driver)
@@ -38,7 +38,7 @@ class TestLogin:
         driver = set_up(url=url)
 
         main = MainPage(driver)
-        main.close_modal_window()
+
         main.login(email = 'cope80449@cancer-treatment.xyz', password = 'test_create_')
 
         base = Base(driver)
@@ -51,7 +51,7 @@ class TestLogin:
         driver = set_up(url=url)
 
         main = MainPage(driver)
-        main.close_modal_window()
+
         main.login(email = '', password = '')
 
         base = Base(driver)
