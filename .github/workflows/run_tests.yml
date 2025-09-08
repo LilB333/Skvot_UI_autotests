@@ -54,67 +54,84 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: run UI tests group 1
+      - name: Debug system info
         run: |
-          python -m pytest tests/ui/test_login.py tests/ui/test_search_product.py tests/ui/test_product_page.py tests/ui/test_add_product_to_cart.py
-          --timeout=300 \
-          --reruns=2 \
-          --reruns-delay=5 \
-          -v
-  ui-tests-group2:
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - name: checkout repository
-        uses: actions/checkout@v3
-
-      - name: setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.13"
-          cache: "pip"
-
-#      - name: cache pip dependencies
-#        uses: actions/cache@v3
-#        with:
-#          path: ~/.cache/pip
-#          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-#          restore-keys: |
-#            ${{ runner.os }}-pip-
+          echo "=== FULL SYSTEM INFO ==="
+          uname -a
+          lsb_release -a
+          echo "=== BROWSER INFO ==="
+          which google-chrome || echo "Chrome not found"
+          which chromedriver || echo "ChromeDriver not found"
+          google-chrome --version || echo "Cannot get chrome version"
+          chromedriver --version || echo "Cannot get chromedriver version"
+          echo "=== PYTHON INFO ==="
+          python --version
+          pip list
+          echo "=== DISPLAY INFO ==="
+          echo $DISPLAY
+          which Xvfb || echo "Xvfb not installed"
 #
-#      - name: cache venv
-#        uses: actions/cache@v3
-#        with:
-#          path: venv
-#          key: ${{ runner.os }}-venv-${{ hashFiles('**/requirements.txt') }}
-#
-#      - name: verify Chrome is installed
+#      - name: run UI tests group 1
 #        run: |
+#          python -m pytest tests/ui/test_login.py tests/ui/test_search_product.py tests/ui/test_product_page.py tests/ui/test_add_product_to_cart.py
+#          --timeout=300 \
+#          --reruns=2 \
+#          --reruns-delay=5 \
+#          -v
+#  ui-tests-group2:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#
+#      - name: checkout repository
+#        uses: actions/checkout@v3
+#
+#      - name: setup Python
+#        uses: actions/setup-python@v4
+#        with:
+#          python-version: "3.13"
+#          cache: "pip"
+#
+##      - name: cache pip dependencies
+##        uses: actions/cache@v3
+##        with:
+##          path: ~/.cache/pip
+##          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+##          restore-keys: |
+##            ${{ runner.os }}-pip-
+##
+##      - name: cache venv
+##        uses: actions/cache@v3
+##        with:
+##          path: venv
+##          key: ${{ runner.os }}-venv-${{ hashFiles('**/requirements.txt') }}
+##
+##      - name: verify Chrome is installed
+##        run: |
+##          echo "Chrome version: $(google-chrome --version)"
+##          echo "Chrome path: $(which google-chrome)"
+#
+#      - name: install Chrome and ChromeDriver
+#        run: |
+#          sudo apt-get update
+#          sudo apt-get install -y wget gnupg
+#          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+#          sudo apt-get update
+#          sudo apt-get install -y google-chrome-stable
+#          sudo apt-get install -y chromium-chromedriver
 #          echo "Chrome version: $(google-chrome --version)"
-#          echo "Chrome path: $(which google-chrome)"
-
-      - name: install Chrome and ChromeDriver
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget gnupg
-          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-          sudo apt-get install -y chromium-chromedriver
-          echo "Chrome version: $(google-chrome --version)"
-          echo "ChromeDriver version: $(chromedriver --version)"
-
-      - name: install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: run UI tests group 2
-        run: |
-          python -m pytest tests/ui/test_cart_page.py tests/ui/test_fill_shipping_info.py tests/ui/test_buy_product.py
-          --timeout=300 \
-          --reruns=2 \
-          --reruns-delay=5 \
-          -v
+#          echo "ChromeDriver version: $(chromedriver --version)"
+#
+#      - name: install dependencies
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install -r requirements.txt
+#
+#      - name: run UI tests group 2
+#        run: |
+#          python -m pytest tests/ui/test_cart_page.py tests/ui/test_fill_shipping_info.py tests/ui/test_buy_product.py
+#          --timeout=300 \
+#          --reruns=2 \
+#          --reruns-delay=5 \
+#          -v
