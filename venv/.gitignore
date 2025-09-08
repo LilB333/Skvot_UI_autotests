@@ -21,7 +21,7 @@ __pycache__/
 *.log
 
 # Screenshoots
-*.png
+screen/*.png
 
 # Environment variables
 .env
