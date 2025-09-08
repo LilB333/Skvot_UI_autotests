@@ -9,6 +9,8 @@ class Base():
         get_url = self.driver.current_url
         print("====Текущий url====", get_url)
 
+    "Метод для клика вне попапа"
+
     "Метод для сверки url"
     def approve_valid_url(self, url):
         assert url == self.driver.current_url
