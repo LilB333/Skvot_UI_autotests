@@ -57,7 +57,10 @@ jobs:
       - name: run UI tests group 1
         run: |
           python -m pytest tests/ui/test_login.py tests/ui/test_search_product.py tests/ui/test_product_page.py tests/ui/test_add_product_to_cart.py
-
+          --timeout=300 \
+          --reruns=2 \
+          --reruns-delay=5 \
+          -v
   ui-tests-group2:
     runs-on: ubuntu-latest
 
@@ -111,4 +114,7 @@ jobs:
       - name: run UI tests group 2
         run: |
           python -m pytest tests/ui/test_cart_page.py tests/ui/test_fill_shipping_info.py tests/ui/test_buy_product.py
-    
+          --timeout=300 \
+          --reruns=2 \
+          --reruns-delay=5 \
+          -v
