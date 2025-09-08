@@ -1,3 +1,5 @@
+import time
+
 import allure
 import pytest
 from pages.product_page import ProductPage
@@ -21,6 +23,9 @@ class TestFillShippingInfo:
 
         driver = set_up(url=url_product_1)
         product_page = ProductPage(driver)
+
+        time.sleep(3)
+
         product_page.close_modal_window()
         product_page.add_product_to_cart()
 

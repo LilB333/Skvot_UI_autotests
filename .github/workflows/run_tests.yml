@@ -44,7 +44,7 @@ jobs:
 
       - name: run UI tests group 1
         run: |
-          python -m pytest tests/ui/test_login.py tests/ui/test_search_product.py tests/ui/test_product_page.py, tests/ui/test_add_product_to_cart.py
+          python -m pytest tests/ui/test_login.py tests/ui/test_search_product.py tests/ui/test_product_page.py tests/ui/test_add_product_to_cart.py
 
   ui-tests-group2:
     runs-on: ubuntu-latest
