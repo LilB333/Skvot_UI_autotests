@@ -7,14 +7,14 @@
     <list default="true" id="4a66bde6-a353-42a4-85dd-a90bbce8e276" name="Changes" comment="initial commit">
       <changelist_data name="LilB333" email="renal_turaev@mail.ru" automatic="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Selenium_Skvot_UI_Autotests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Selenium_Skvot_UI_Autotests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_09_2025_19_19_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_09_2025_19_19__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/python.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/python3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/python313.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/vcruntime140.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/vcruntime140_1.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ui/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_buy_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/test_cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>

@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/.venv/Scripts" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (Selenium_Skvot_UI_Autotests)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 virtualenv at C:\Users\user\PycharmProjects\Selenium_Skvot_UI_Autotests\venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
